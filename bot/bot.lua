@@ -8,7 +8,7 @@ redis = require('redis')
 db = redis.connect('127.0.0.1', 6379)
 BASE = '/home/bot/inline/bot/'
 SUDO = 326824638 --sudo id
-sudo_users = {326824638,123456789,Userid}
+sudo_users = {326824638,332532424,Userid}
 BOTS = 25940597 --bot id
 bot_id = db:get(SUDO..'bot_id')
 function vardump(value)
