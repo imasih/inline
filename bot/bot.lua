@@ -39,7 +39,7 @@ end
 end
 ------------------------------------------------------------
 function is_bot(msg)
-  if tonumber(BOTS) == 313139061 then
+  if tonumber(BOTS) == 25940597 then
     return true
     else
     return false
@@ -1219,7 +1219,7 @@ end
         if text and text:match('whois (%d+)') then
               local id = text:match('whois (%d+)')
             local text = 'برای مشاهده اطلاعات کاربر کلیک کنید.'
-			--{"👤 برای مشاهده کاربر کلیک کنید!","Click to view User 👤"}
+			--{"برای مشاهده کاربر کلیک کنید!","Click to view User"}
             tdcli_function ({ID="SendMessage", chat_id_=msg.chat_id_, reply_to_message_id_=msg.id_, disable_notification_=0, from_background_=1, reply_markup_=nil, input_message_content_={ID="InputMessageText", text_=text, disable_web_page_preview_=1, clear_draft_=0, entities_={[0] = {ID="MessageEntityMentionName", offset_=0, length_=36, user_id_=id}}}}, dl_cb, nil)
               end
         if text == "whois" then
